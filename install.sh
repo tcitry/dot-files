@@ -3,3 +3,4 @@ ln ~/.tmux.conf tmux.conf
 ln ~/.zshrc zshrc
 ln ~/.vimrc vimrc
 ln ~/.bashrc bashrc
+ln ~/.vimrc.local vimrc.local
