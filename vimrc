@@ -11,16 +11,18 @@ Bundle 'tpope/vim-surround'
 Bundle 'Townk/vim-autoclose'
 Bundle 'fatih/vim-go'
 Bundle 'rizzatti/dash.vim'
-Bundle 'vim-scripts/Pydiction'
+
 Bundle 'tomasr/molokai'
+Bundle 'altercation/vim-colors-solarized'
+Bundle 'crucerucalin/peaksea.vim'
+Bundle 'chriskempson/vim-tomorrow-theme'
+
 Bundle 'scrooloose/nerdtree'
 Bundle 'jistr/vim-nerdtree-tabs'
 Bundle 'yonchu/accelerated-smooth-scroll'
 Bundle 'vim-scripts/matchit.zip'
 Bundle 'othree/xml.vim'
-Bundle 'python.vim'
 Bundle 'mattn/webapi-vim'
-Bundle 'mattn/gist-vim'
 Bundle 'nathanaelkane/vim-indent-guides'
 Bundle 'airblade/vim-gitgutter'
 Bundle 'scrooloose/nerdcommenter'
@@ -29,7 +31,11 @@ Bundle 'kien/ctrlp.vim'
 Bundle 'easymotion/vim-easymotion'
 Bundle 'Shougo/neocomplete'
 Bundle 'majutsushi/tagbar'
+Bundle 'mileszs/ack.vim'
 
+" let g:solarized_termcolors=256
+" let g:molokai_original = 1
+" set t_Co=256
 filetype indent plugin on 
 set ai "自动对齐
 set mouse=a
@@ -45,10 +51,12 @@ set backupdir=/tmp "设置备份文件目录
 set directory=/tmp "设置临时文件目录
 set hls "检索时高亮显示匹配项
 set helplang=cn "帮助系统设置为中文
-set cursorline "高亮行
+" set cursorline "高亮行 大文件不要用，卡死
 set tags=tags;/
 set background=dark
-colorscheme molokai
+
+colorscheme tomorrow-night
+
 if has("gui_running") 
 	set guifont=Monaco:h14
     set guioptions-=m " 隐藏菜单栏 
@@ -60,9 +68,6 @@ if has("gui_running")
 endif  
 
 let Tlist_Auto_Open=1
-let g:solarized_termcolors=256
-"set t_Co=256
-"let g:molokai_original = 1	
 let g:pydiction_location = '~/.vim/bundle/Pydiction/complete-dict'
 let g:go_fmt_command = "goimports"
 let g:go_play_open_browser = 0
@@ -74,6 +79,7 @@ let g:syntastic_python_checkers=['pylint']
 let NERDTreeIgnore=['\.pyc$', '\~$']
 let g:NERDSpaceDelims=1 "注释的时候自动加个空格
 let g:indent_guides_auto_colors = 0
+let g:tagbar_autofocus = 1
 
 autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
@@ -84,7 +90,8 @@ autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=green ctermbg=4
 map <C-e> :NERDTreeToggle<CR>
 map <leader>w :w<CR>
 map <leader>wq :wq<CR>
-map <leader><leader>t :TagbarToggle<CR>
+map <leader>q :q<CR>
+map <leader>t :TagbarToggle<CR>
 
 
 
@@ -123,8 +130,8 @@ inoremap <expr><C-l>     neocomplete#complete_common_string()
 inoremap <silent> <CR> <C-r>=<SID>my_cr_function()<CR>
 function! s:my_cr_function()
 	" return (pumvisible() ? "\<C-y>" : "" ) . "\<CR>"
-    "For no inserting <CR> key.
-    return pumvisible() ? "\<C-y>" : "\<CR>"
+	" For no inserting <CR> key.
+	return pumvisible() ? "\<C-y>" : "\<CR>"
 endfunction
 " <TAB>: completion.
 inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
