@@ -55,7 +55,7 @@ set helplang=cn "帮助系统设置为中文
 set tags=tags;/
 set background=dark
 
-colorscheme tomorrow-night
+" colorscheme tomorrow-night
 
 if has("gui_running") 
 	set guifont=Monaco:h14
@@ -67,15 +67,12 @@ if has("gui_running")
 	set showtabline=0 " 隐藏Tab栏 
 endif  
 
-let Tlist_Auto_Open=1
-let g:pydiction_location = '~/.vim/bundle/Pydiction/complete-dict'
 let g:go_fmt_command = "goimports"
 let g:go_play_open_browser = 0
 let g:go_bin_path = $GOPATH
 let g:go_snippet_engine = "neosnippet"
-let g:syntastic_check_on_open=1
 let g:syntastic_python_checkers=['pylint']
-" let g:nerdtree_tabs_open_on_console_startup=1       "设置打开vim的时候默认打开目录树加强版插件
+let g:nerdtree_tabs_open_on_console_startup=0       "设置打开vim的时候默认打开目录树加强版插件
 let NERDTreeIgnore=['\.pyc$', '\~$']
 let g:NERDSpaceDelims=1 "注释的时候自动加个空格
 let g:indent_guides_auto_colors = 0
@@ -90,8 +87,8 @@ autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=green ctermbg=4
 map <C-e> :NERDTreeToggle<CR>
 map <leader>w :w<CR>
 map <leader>wq :wq<CR>
-map <leader>q :q<CR>
-map <leader>t :TagbarToggle<CR>
+" map <leader>t :TagbarToggle<CR>
+map <leader>t :TagbarOpenAutoClose<CR>
 
 
 
