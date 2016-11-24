@@ -55,7 +55,7 @@ set helplang=cn "帮助系统设置为中文
 set tags=tags;/
 set background=dark
 
-" colorscheme tomorrow-night
+colorscheme tomorrow-night
 
 if has("gui_running") 
 	set guifont=Monaco:h14
