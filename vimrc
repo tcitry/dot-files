@@ -55,7 +55,8 @@ set helplang=cn "帮助系统设置为中文
 set tags=tags;/
 set background=dark
 
-colorscheme tomorrow-night
+" colorscheme tomorrow-night
+colorscheme peaksea
 
 if has("gui_running") 
 	set guifont=Monaco:h14
@@ -143,7 +144,7 @@ inoremap <expr><BS> neocomplete#smart_close_popup()."\<C-h>"
 
 " Shell like behavior(not recommended).
 "set completeopt+=longest
-"let g:neocomplete#enable_auto_select = 1
+" let g:neocomplete#enable_auto_select = 1
 "let g:neocomplete#disable_auto_complete = 1
 "inoremap <expr><TAB>  pumvisible() ? "\<Down>" : "\<C-x>\<C-u>"
 
