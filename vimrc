@@ -75,6 +75,7 @@ let g:go_bin_path = $GOPATH
 let g:go_snippet_engine = "neosnippet"
 let g:syntastic_python_checkers=['pylint']
 let g:nerdtree_tabs_open_on_console_startup=0       "设置打开vim的时候默认打开目录树加强版插件
+let NERDTreeQuitOnOpen=1
 let NERDTreeIgnore=['\.pyc$', '\~$']
 let g:NERDSpaceDelims=1 "注释的时候自动加个空格
 let g:indent_guides_auto_colors = 0
@@ -91,10 +92,6 @@ map <leader>w :w<CR>
 map <leader>wq :wq<CR>
 " map <leader>t :TagbarToggle<CR>
 map <leader>t :TagbarOpenAutoClose<CR>
-
-
-
-
 
 "Note: This option must be set in .vimrc(_vimrc).  NOT IN .gvimrc(_gvimrc)!
 " Disable AutoComplPop.
@@ -151,9 +148,9 @@ autocmd FileType xml setlocal omnifunc=xmlcomplete#CompleteTags
 if !exists('g:neocomplete#sources#omni#input_patterns')
   let g:neocomplete#sources#omni#input_patterns = {}
 endif
-"let g:neocomplete#sources#omni#input_patterns.php = '[^. \t]->\h\w*\|\h\w*::'
-"let g:neocomplete#sources#omni#input_patterns.c = '[^.[:digit:] *\t]\%(\.\|->\)'
-"let g:neocomplete#sources#omni#input_patterns.cpp = '[^.[:digit:] *\t]\%(\.\|->\)\|\h\w*::'
+let g:neocomplete#sources#omni#input_patterns.php = '[^. \t]->\h\w*\|\h\w*::'
+let g:neocomplete#sources#omni#input_patterns.c = '[^.[:digit:] *\t]\%(\.\|->\)'
+let g:neocomplete#sources#omni#input_patterns.cpp = '[^.[:digit:] *\t]\%(\.\|->\)\|\h\w*::'
 
 " For perlomni.vim setting.
 " https://github.com/c9s/perlomni.vim
