@@ -1,5 +1,8 @@
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
+export GOROOT=/usr/local/go
+export PATH=$PATH:$GOROOT/bin
+export GOPATH=$HOME/golang
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
@@ -55,7 +58,7 @@ source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
-export PATH="/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:{$PATH}"
+export PATH=/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:$PATH
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
@@ -89,5 +92,4 @@ alias 'cd..'='cd ..'
 alias 'blue'='cd /Users/yindongliang/Desktop/ujipin/blueberry/BlueBerry'
 source ~/.bash_profile
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
-eval "$(thefuck --alias)"
 

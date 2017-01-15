@@ -56,8 +56,8 @@ set tags=tags;/
 set background=dark
 set completeopt-=preview
 
-" colorscheme tomorrow-night
-colorscheme peaksea
+colorscheme tomorrow-night
+" colorscheme peaksea
 
 if has("gui_running") 
 	set guifont=Monaco:h14
@@ -87,6 +87,7 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTree
 autocmd VimEnter,Colorscheme * :hi IndentGuidesOdd  guibg=red   ctermbg=3
 autocmd VimEnter,Colorscheme * :hi IndentGuidesEven guibg=green ctermbg=4
 
+noremap <silent> <Leader>f :NERDTreeFind<cr>
 map <C-e> :NERDTreeToggle<CR>
 map <leader>w :w<CR>
 map <leader>wq :wq<CR>
