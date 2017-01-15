@@ -91,5 +91,6 @@ export PATH=/usr/local/mysql/bin:$PATH
 alias 'cd..'='cd ..'
 alias 'blue'='cd /Users/yindongliang/Desktop/ujipin/blueberry/BlueBerry'
 source ~/.bash_profile
+source ~/.bashrc
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 
