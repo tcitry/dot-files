@@ -35,7 +35,7 @@ Bundle 'mileszs/ack.vim'
 
 " let g:solarized_termcolors=256
 " let g:molokai_original = 1
-" set t_Co=256
+set t_Co=256
 filetype indent plugin on 
 set ai "自动对齐
 set mouse=a
@@ -56,7 +56,7 @@ set tags=tags;/
 set background=dark
 set completeopt-=preview
 
-colorscheme tomorrow-night
+" colorscheme tomorrow-night
 " colorscheme peaksea
 
 if has("gui_running") 

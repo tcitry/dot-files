@@ -80,17 +80,18 @@ export LANG=en_US.UTF-8
 # ssh
 # export SSH_KEY_PATH="~/.ssh/dsa_id"
 
-export PATH=/Users/yindongliang/mongodb/bin:$PATH
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+
+export PATH=$HOME/mongodb/bin:$PATH
 export PATH=$PATH:/usr/local/go/bin
 export PATH=/usr/local/php5/bin:$PATH
+export PATH=/usr/local/mysql/bin:$PATH
 alias tmux='tmux -2'
 alias vi=vim
 alias vim=/Applications/MacVim.app/Contents/MacOS/Vim
 alias act='. ../bin/activate'
-export PATH=/usr/local/mysql/bin:$PATH
 alias 'cd..'='cd ..'
-alias 'blue'='cd /Users/yindongliang/Desktop/ujipin/blueberry/BlueBerry'
+alias o='open .'
 source ~/.bash_profile
 source ~/.bashrc
-export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 
