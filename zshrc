@@ -94,6 +94,7 @@ alias act='. ../bin/activate'
 alias 'cd..'='cd ..'
 alias o='open .'
 alias py='python3'
+alias ctags='/usr/local/Cellar/ctags/5.8_1/bin/ctags'
 source ~/.bash_profile
 source ~/.bashrc
 
