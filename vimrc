@@ -38,7 +38,7 @@ Bundle 'mileszs/ack.vim'
 set t_Co=256
 filetype indent plugin on 
 set ai "自动对齐
-set mouse=a
+" set mouse=a
 set scrolloff=5
 set laststatus=2 "始终显示状态栏
 set tabstop=4 "一个制表符的长度

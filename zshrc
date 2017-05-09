@@ -5,6 +5,13 @@ export PATH=$PATH:$GOROOT/bin
 export GOPATH=$HOME/golang
 export HOMEBREW_BOTTLE_DOMAIN=http://7xkcej.dl1.z0.glb.clouddn.com
 
+export JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home"
+export PATH=$JAVA_HOME/bin:$PATH
+export PATH="/Users/yindongliang/.pyenv/bin:$PATH"
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
+
+
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
@@ -53,13 +60,13 @@ ZSH_THEME="awesomepanda"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git)
+plugins=(git osx docker)
 
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
-export PATH=/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/sbin:$PATH
+export PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/sbin:$PATH
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
@@ -87,6 +94,7 @@ export PATH=$HOME/mongodb/bin:$PATH
 export PATH=$PATH:/usr/local/go/bin
 export PATH=/usr/local/php5/bin:$PATH
 export PATH=/usr/local/mysql/bin:$PATH
+export NVM_DIR="$HOME/.nvm"
 alias tmux='tmux -2'
 alias vi=vim
 alias vim=/Applications/MacVim.app/Contents/MacOS/Vim
@@ -94,7 +102,11 @@ alias act='. ../bin/activate'
 alias 'cd..'='cd ..'
 alias o='open .'
 alias py='python3'
+alias py2='python2'
 alias ctags='/usr/local/Cellar/ctags/5.8_1/bin/ctags'
-source ~/.bash_profile
+alias s="/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl"
 source ~/.bashrc
 
+
+export NVM_DIR="/Users/yindongliang/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
