@@ -32,6 +32,7 @@ Bundle 'easymotion/vim-easymotion'
 Bundle 'Shougo/neocomplete'
 Bundle 'majutsushi/tagbar'
 Bundle 'mileszs/ack.vim'
+Bundle "davidhalter/jedi-vim"
 
 " let g:solarized_termcolors=256
 " let g:molokai_original = 1

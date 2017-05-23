@@ -4,12 +4,9 @@ export GOROOT=/usr/local/go
 export PATH=$PATH:$GOROOT/bin
 export GOPATH=$HOME/golang
 export HOMEBREW_BOTTLE_DOMAIN=http://7xkcej.dl1.z0.glb.clouddn.com
-
+export "CFLAGS=-I/usr/local/include -L/usr/local/lib"
 export JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home"
 export PATH=$JAVA_HOME/bin:$PATH
-export PATH="/Users/yindongliang/.pyenv/bin:$PATH"
-eval "$(pyenv init -)"
-eval "$(pyenv virtualenv-init -)"
 
 
 # Set name of the theme to load.
@@ -94,7 +91,6 @@ export PATH=$HOME/mongodb/bin:$PATH
 export PATH=$PATH:/usr/local/go/bin
 export PATH=/usr/local/php5/bin:$PATH
 export PATH=/usr/local/mysql/bin:$PATH
-export NVM_DIR="$HOME/.nvm"
 alias tmux='tmux -2'
 alias vi=vim
 alias vim=/Applications/MacVim.app/Contents/MacOS/Vim
@@ -108,5 +104,12 @@ alias s="/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl"
 source ~/.bashrc
 
 
-export NVM_DIR="/Users/yindongliang/.nvm"
+export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+export PATH="$HOME/.pyenv/bin:$PATH"
+export PYENV_ROOT="$HOME/.pyenv"
+export PYENV_VIRTUALENV_DISABLE_PROMPT=1
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
