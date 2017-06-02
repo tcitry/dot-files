@@ -1,6 +1,6 @@
 rm vimrc
 rm zshrc
-rm bash_profile
+rm tmux.conf
 ln ~/.vimrc vimrc
 ln ~/.zshrc zshrc
-ln ~/.bash_profile
+ln ~/.tmux.conf tmux.conf

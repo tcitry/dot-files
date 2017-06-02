@@ -110,6 +110,6 @@ export NVM_DIR="$HOME/.nvm"
 
 export PATH="$HOME/.pyenv/bin:$PATH"
 export PYENV_ROOT="$HOME/.pyenv"
-export PYENV_VIRTUALENV_DISABLE_PROMPT=1
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
+eval $(thefuck --alias)
