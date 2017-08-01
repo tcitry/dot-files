@@ -3,6 +3,8 @@ export ZSH=$HOME/.oh-my-zsh
 export GOROOT=/usr/local/go
 export PATH=$PATH:$GOROOT/bin
 export GOPATH=$HOME/golang
+export GVM_ROOT=$HOME/.gvm
+export PATH=$PATH:$GVM_ROOT/bin
 export HOMEBREW_BOTTLE_DOMAIN=http://7xkcej.dl1.z0.glb.clouddn.com
 export "CFLAGS=-I/usr/local/include -L/usr/local/lib"
 export JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home"
@@ -57,7 +59,7 @@ ZSH_THEME="awesomepanda"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git osx docker)
+plugins=(git docker git-flow web-search colored-man-pages zsh-autosuggestions cd-gitroot)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -96,11 +98,13 @@ alias vi=vim
 alias vim=/Applications/MacVim.app/Contents/MacOS/Vim
 alias act='. ../bin/activate'
 alias 'cd..'='cd ..'
+alias cdr='cd-gitroot'
 alias o='open .'
-alias py='python3'
-alias py2='python2'
+alias p='python3'
+alias py='python2'
 alias ctags='/usr/local/Cellar/ctags/5.8_1/bin/ctags'
 alias s="/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl"
+alias my='mycli -uroot -p123456'
 source ~/.bashrc
 
 

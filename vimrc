@@ -10,7 +10,6 @@ Bundle 'bling/vim-airline'
 Bundle 'tpope/vim-surround'
 Bundle 'Townk/vim-autoclose'
 Bundle 'fatih/vim-go'
-Bundle 'rizzatti/dash.vim'
 
 Bundle 'tomasr/molokai'
 Bundle 'altercation/vim-colors-solarized'
@@ -41,6 +40,7 @@ filetype indent plugin on
 set ai "自动对齐
 " set mouse=a
 set scrolloff=5
+" set foldmethod=indent
 set laststatus=2 "始终显示状态栏
 set tabstop=4 "一个制表符的长度
 set shiftwidth=4 "一个缩进的长度
@@ -56,6 +56,7 @@ set helplang=cn "帮助系统设置为中文
 set tags=tags;/
 set background=dark
 set completeopt-=preview
+set ic
 
 " colorscheme tomorrow-night
 colorscheme peaksea
