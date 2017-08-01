@@ -1,4 +1,4 @@
-##Config file about some tools like:
+## dotfiles of some tools like:
 
 - Vim 
 - Emacs
