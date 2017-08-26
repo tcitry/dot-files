@@ -1,4 +1,4 @@
-## dotfiles of some tools like:
+## dotfiles on my mac:
 
 - Vim 
 - Emacs
