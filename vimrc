@@ -4,11 +4,12 @@ filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#rc()
 let mapleader=','
-Bundle 'gmarik/vundle'
+Bundle 'VundleVim/Vundle.vim'
 
 Bundle 'bling/vim-airline'
 Bundle 'tpope/vim-surround'
 Bundle 'Townk/vim-autoclose'
+" Bundle 'Raimondi/delimitMate'
 Bundle 'fatih/vim-go'
 
 Bundle 'tomasr/molokai'
@@ -28,7 +29,8 @@ Bundle 'scrooloose/nerdcommenter'
 Bundle 'tpope/vim-fugitive'
 Bundle 'kien/ctrlp.vim'
 Bundle 'easymotion/vim-easymotion'
-Bundle 'Shougo/neocomplete'
+" Bundle 'Shougo/neocomplete'
+Bundle 'Valloric/YouCompleteMe'
 Bundle 'majutsushi/tagbar'
 Bundle 'mileszs/ack.vim'
 Bundle "davidhalter/jedi-vim"
