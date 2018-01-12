@@ -1,44 +1,46 @@
-syntax enable
 set nocompatible
 filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#rc()
+call vundle#begin()
+Plugin 'VundleVim/Vundle.vim'
+
+Plugin 'bling/vim-airline'
+Plugin 'tpope/vim-surround'
+Plugin 'Townk/vim-autoclose'
+" Plugin 'Raimondi/delimitMate'
+Plugin 'fatih/vim-go'
+
+Plugin 'tomasr/molokai'
+Plugin 'altercation/vim-colors-solarized'
+Plugin 'crucerucalin/peaksea.vim'
+Plugin 'chriskempson/vim-tomorrow-theme'
+
+Plugin 'scrooloose/nerdtree'
+Plugin 'jistr/vim-nerdtree-tabs'
+Plugin 'yonchu/accelerated-smooth-scroll'
+Plugin 'vim-scripts/matchit.zip'
+Plugin 'othree/xml.vim'
+Plugin 'mattn/webapi-vim'
+Plugin 'nathanaelkane/vim-indent-guides'
+Plugin 'airblade/vim-gitgutter'
+Plugin 'scrooloose/nerdcommenter'
+Plugin 'tpope/vim-fugitive'
+Plugin 'kien/ctrlp.vim'
+Plugin 'easymotion/vim-easymotion'
+" Plugin 'Shougo/neocomplete'
+Plugin 'Valloric/YouCompleteMe'
+Plugin 'majutsushi/tagbar'
+Plugin 'mileszs/ack.vim'
+Plugin 'davidhalter/jedi-vim'
+
+call vundle#end()
+filetype plugin indent on
+
 let mapleader=','
-Bundle 'VundleVim/Vundle.vim'
-
-Bundle 'bling/vim-airline'
-Bundle 'tpope/vim-surround'
-Bundle 'Townk/vim-autoclose'
-" Bundle 'Raimondi/delimitMate'
-Bundle 'fatih/vim-go'
-
-Bundle 'tomasr/molokai'
-Bundle 'altercation/vim-colors-solarized'
-Bundle 'crucerucalin/peaksea.vim'
-Bundle 'chriskempson/vim-tomorrow-theme'
-
-Bundle 'scrooloose/nerdtree'
-Bundle 'jistr/vim-nerdtree-tabs'
-Bundle 'yonchu/accelerated-smooth-scroll'
-Bundle 'vim-scripts/matchit.zip'
-Bundle 'othree/xml.vim'
-Bundle 'mattn/webapi-vim'
-Bundle 'nathanaelkane/vim-indent-guides'
-Bundle 'airblade/vim-gitgutter'
-Bundle 'scrooloose/nerdcommenter'
-Bundle 'tpope/vim-fugitive'
-Bundle 'kien/ctrlp.vim'
-Bundle 'easymotion/vim-easymotion'
-" Bundle 'Shougo/neocomplete'
-Bundle 'Valloric/YouCompleteMe'
-Bundle 'majutsushi/tagbar'
-Bundle 'mileszs/ack.vim'
-Bundle "davidhalter/jedi-vim"
-
+syntax enable
 " let g:solarized_termcolors=256
 " let g:molokai_original = 1
 set t_Co=256
-filetype indent plugin on 
 set ai "自动对齐
 " set mouse=a
 set scrolloff=5
@@ -61,7 +63,7 @@ set completeopt-=preview
 set ic
 
 " colorscheme tomorrow-night
-colorscheme peaksea
+" colorscheme peaksea
 
 if has("gui_running") 
 	set guifont=Monaco:h14
