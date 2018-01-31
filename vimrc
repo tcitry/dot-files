@@ -62,7 +62,7 @@ set background=dark
 set completeopt-=preview
 set ic
 
-" colorscheme tomorrow-night
+colorscheme tomorrow-night
 " colorscheme peaksea
 
 if has("gui_running") 
@@ -97,5 +97,6 @@ noremap <silent> <Leader>f :NERDTreeFind<cr>
 map <C-e> :NERDTreeToggle<CR>
 map <leader>w :w<CR>
 map <leader>wq :wq<CR>
+map <leader>q :q<CR>
 " map <leader>t :TagbarToggle<CR>
 map <leader>t :TagbarOpenAutoClose<CR>
