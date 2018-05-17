@@ -28,10 +28,10 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'kien/ctrlp.vim'
 Plugin 'easymotion/vim-easymotion'
 " Plugin 'Shougo/neocomplete'
-Plugin 'Valloric/YouCompleteMe'
+" Plugin 'Valloric/YouCompleteMe'
 Plugin 'majutsushi/tagbar'
 Plugin 'mileszs/ack.vim'
-Plugin 'davidhalter/jedi-vim'
+" Plugin 'davidhalter/jedi-vim'
 
 call vundle#end()
 filetype plugin indent on
@@ -62,8 +62,8 @@ set background=dark
 set completeopt-=preview
 set ic
 
-colorscheme tomorrow-night
-" colorscheme peaksea
+" colorscheme tomorrow-night
+colorscheme peaksea
 
 if has("gui_running") 
 	set guifont=Monaco:h14

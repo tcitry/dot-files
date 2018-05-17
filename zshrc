@@ -7,7 +7,7 @@ export GVM_ROOT=$HOME/.gvm
 export PATH=$PATH:$GVM_ROOT/bin
 export HOMEBREW_BOTTLE_DOMAIN=http://7xkcej.dl1.z0.glb.clouddn.com
 export "CFLAGS=-I/usr/local/include -L/usr/local/lib"
-export JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home"
+export JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk-9.jdk/Contents/Home"
 export PATH=$JAVA_HOME/bin:$PATH
 
 
@@ -69,10 +69,9 @@ export PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/sbin:$PATH
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
-# export LANG=en_US.UTF-8
-export LANG=zh_CN.UTF-8
-export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
+# export LANG=zh_CN.UTF-8
+export LC_ALL=en_US.UTF-8
 
 # Preferred editor for local and remote sessions
 # if [[ -n $SSH_CONNECTION ]]; then
@@ -100,20 +99,23 @@ alias act='. ../bin/activate'
 alias 'cd..'='cd ..'
 alias cdr='cd-gitroot'
 alias o='open .'
-alias p='python3'
-alias py='python2'
 alias ctags='/usr/local/Cellar/ctags/5.8_1/bin/ctags'
 alias s="/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl"
 alias my='mycli -uroot -p123456'
+alias code='cd /Users/yindongliang/Desktop/code'
+alias github='cd /Users/yindongliang/Desktop/github'
 source ~/.bashrc
+source ~/.bash_profile
 
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
-export PATH="$HOME/.pyenv/bin:$PATH"
-export PYENV_ROOT="$HOME/.pyenv"
-eval "$(pyenv init -)"
-eval "$(pyenv virtualenv-init -)"
 eval $(thefuck --alias)
+
+# use for surge
+# proxy=http://127.0.0.1:6152
+# export http_proxy=$proxy
+# export https_proxy=$proxy
+# export ftp_proxy=$proxy
