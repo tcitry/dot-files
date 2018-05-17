@@ -99,6 +99,9 @@ alias act='. ../bin/activate'
 alias 'cd..'='cd ..'
 alias cdr='cd-gitroot'
 alias o='open .'
+alias py='python'
+alias py2='python2'
+alias py3='python3'
 alias ctags='/usr/local/Cellar/ctags/5.8_1/bin/ctags'
 alias s="/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl"
 alias my='mycli -uroot -p123456'
@@ -119,3 +122,5 @@ eval $(thefuck --alias)
 # export http_proxy=$proxy
 # export https_proxy=$proxy
 # export ftp_proxy=$proxy
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+
