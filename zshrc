@@ -1,15 +1,17 @@
+source ~/.bashrc
+source ~/.bash_profile
+
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
+export GOPATH=$HOME/go
+export GVM_ROOT=$HOME/.gvm
 export GOROOT=/usr/local/go
 export PATH=$PATH:$GOROOT/bin
-export GOPATH=$HOME/golang
-export GVM_ROOT=$HOME/.gvm
 export PATH=$PATH:$GVM_ROOT/bin
 export HOMEBREW_BOTTLE_DOMAIN=http://7xkcej.dl1.z0.glb.clouddn.com
 export "CFLAGS=-I/usr/local/include -L/usr/local/lib"
 export JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk-9.jdk/Contents/Home"
 export PATH=$JAVA_HOME/bin:$PATH
-
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
@@ -89,7 +91,6 @@ export LC_ALL=en_US.UTF-8
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 
 export PATH=$HOME/mongodb/bin:$PATH
-export PATH=$PATH:/usr/local/go/bin
 export PATH=/usr/local/php5/bin:$PATH
 export PATH=/usr/local/mysql/bin:$PATH
 alias tmux='tmux -2'
@@ -99,17 +100,11 @@ alias act='. ../bin/activate'
 alias 'cd..'='cd ..'
 alias cdr='cd-gitroot'
 alias o='open .'
-alias py='python'
-alias py2='python2'
-alias py3='python3'
 alias ctags='/usr/local/Cellar/ctags/5.8_1/bin/ctags'
 alias s="/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl"
 alias my='mycli -uroot -p123456'
 alias code='cd /Users/yindongliang/Desktop/code'
 alias github='cd /Users/yindongliang/Desktop/github'
-source ~/.bashrc
-source ~/.bash_profile
-
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
@@ -122,5 +117,3 @@ eval $(thefuck --alias)
 # export http_proxy=$proxy
 # export https_proxy=$proxy
 # export ftp_proxy=$proxy
-test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
-
