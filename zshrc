@@ -63,7 +63,7 @@ ZSH_THEME="awesomepanda"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git docker docker-compose git-flow web-search colored-man-pages cd-gitroot)
+plugins=(git web-search colored-man-pages cd-gitroot zsh-autosuggestions autojump)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -94,8 +94,7 @@ export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 export PATH=$HOME/mongodb/bin:$PATH
 export PATH=/usr/local/php5/bin:$PATH
 export PATH=/usr/local/mysql/bin:$PATH
-alias vi=vim
-alias vim=/Applications/MacVim.app/Contents/MacOS/Vim
+alias vi=/Applications/MacVim.app/Contents/MacOS/Vim
 alias act='. venv/bin/activate'
 alias 'cd..'='cd ..'
 alias cdr='cd-gitroot'
@@ -103,13 +102,7 @@ alias o='open .'
 alias ctags='/usr/local/Cellar/ctags/5.8_1/bin/ctags'
 alias s="/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl"
 alias my='mycli -uroot -p123456'
-alias code='cd /Users/yindongliang/code'
-alias github='cd /Users/yindongliang/github'
 alias py=python
-
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 eval $(thefuck --alias)
 eval "$(pyenv init -)"

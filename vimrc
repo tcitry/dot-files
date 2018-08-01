@@ -10,8 +10,6 @@ Plugin 'Townk/vim-autoclose'
 " Plugin 'Raimondi/delimitMate'
 Plugin 'fatih/vim-go'
 
-Plugin 'tomasr/molokai'
-Plugin 'altercation/vim-colors-solarized'
 Plugin 'crucerucalin/peaksea.vim'
 Plugin 'chriskempson/vim-tomorrow-theme'
 
@@ -21,7 +19,6 @@ Plugin 'yonchu/accelerated-smooth-scroll'
 Plugin 'vim-scripts/matchit.zip'
 Plugin 'othree/xml.vim'
 Plugin 'mattn/webapi-vim'
-Plugin 'airblade/vim-gitgutter'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'tpope/vim-fugitive'
 Plugin 'kien/ctrlp.vim'
@@ -37,8 +34,6 @@ filetype plugin indent on
 
 let mapleader=','
 syntax enable
-" let g:solarized_termcolors=256
-" let g:molokai_original = 1
 set t_Co=256
 set ai "自动对齐
 " set mouse=a
