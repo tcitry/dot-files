@@ -21,7 +21,6 @@ Plugin 'yonchu/accelerated-smooth-scroll'
 Plugin 'vim-scripts/matchit.zip'
 Plugin 'othree/xml.vim'
 Plugin 'mattn/webapi-vim'
-Plugin 'nathanaelkane/vim-indent-guides'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'tpope/vim-fugitive'
@@ -63,7 +62,7 @@ set completeopt-=preview
 set ic
 
 " colorscheme tomorrow-night
-colorscheme peaksea
+" colorscheme peaksea
 
 if has("gui_running") 
 	set guifont=Monaco:h14

@@ -1,13 +1,15 @@
 source ~/.bashrc
 source ~/.bash_profile
 
+export PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/sbin:$PATH
+
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
-export GOPATH=$HOME/go
 export GVM_ROOT=$HOME/.gvm
-export GOROOT=/usr/local/go
-export PATH=$PATH:$GOROOT/bin
 export PATH=$PATH:$GVM_ROOT/bin
+export GOROOT=/usr/local/go
+export GOPATH=$HOME/go
+export PATH=$PATH:$GOROOT/bin
 export HOMEBREW_BOTTLE_DOMAIN=http://7xkcej.dl1.z0.glb.clouddn.com
 export "CFLAGS=-I/usr/local/include -L/usr/local/lib"
 export JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk-9.jdk/Contents/Home"
@@ -61,13 +63,12 @@ ZSH_THEME="awesomepanda"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git docker docker-compose git-flow web-search colored-man-pages zsh-autosuggestions cd-gitroot)
+plugins=(git docker docker-compose git-flow web-search colored-man-pages cd-gitroot)
 
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
-export PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/sbin:$PATH
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
@@ -93,27 +94,29 @@ export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 export PATH=$HOME/mongodb/bin:$PATH
 export PATH=/usr/local/php5/bin:$PATH
 export PATH=/usr/local/mysql/bin:$PATH
-alias tmux='tmux -2'
 alias vi=vim
 alias vim=/Applications/MacVim.app/Contents/MacOS/Vim
-alias act='. ../bin/activate'
+alias act='. venv/bin/activate'
 alias 'cd..'='cd ..'
 alias cdr='cd-gitroot'
 alias o='open .'
 alias ctags='/usr/local/Cellar/ctags/5.8_1/bin/ctags'
 alias s="/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl"
 alias my='mycli -uroot -p123456'
-alias code='cd /Users/yindongliang/Desktop/code'
-alias github='cd /Users/yindongliang/Desktop/github'
+alias code='cd /Users/yindongliang/code'
+alias github='cd /Users/yindongliang/github'
+alias py=python
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 eval $(thefuck --alias)
+eval "$(pyenv init -)"
 
 # use for surge
 # proxy=http://127.0.0.1:6152
 # export http_proxy=$proxy
 # export https_proxy=$proxy
 # export ftp_proxy=$proxy
+
