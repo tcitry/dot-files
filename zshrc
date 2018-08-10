@@ -1,6 +1,3 @@
-source ~/.bashrc
-source ~/.bash_profile
-
 export PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/sbin:$PATH
 
 # Path to your oh-my-zsh installation.
@@ -95,7 +92,7 @@ export PATH=$HOME/mongodb/bin:$PATH
 export PATH=/usr/local/php5/bin:$PATH
 export PATH=/usr/local/mysql/bin:$PATH
 alias vi=/Applications/MacVim.app/Contents/MacOS/Vim
-alias act='. venv/bin/activate'
+alias a='. venv/bin/activate'
 alias 'cd..'='cd ..'
 alias cdr='cd-gitroot'
 alias o='open .'
@@ -113,3 +110,9 @@ eval "$(pyenv init -)"
 # export https_proxy=$proxy
 # export ftp_proxy=$proxy
 
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+# [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+[[ -s "/Users/yindongliang/.gvm/scripts/gvm" ]] && source "/Users/yindongliang/.gvm/scripts/gvm"
