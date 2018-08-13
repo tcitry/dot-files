@@ -69,10 +69,10 @@ if has("gui_running")
 	set showtabline=0 " 隐藏Tab栏 
 endif  
 
-let g:go_fmt_command = "goimports"
-let g:go_play_open_browser = 0
-let g:go_bin_path = $GOPATH
-let g:go_snippet_engine = "neosnippet"
+" let g:go_fmt_command = "goimports"
+" let g:go_play_open_browser = 0
+" let g:go_bin_path = $GOPATH
+" let g:go_snippet_engine = "neosnippet"
 let g:syntastic_python_checkers=['pylint']
 let g:nerdtree_tabs_open_on_console_startup=0       "设置打开vim的时候默认打开目录树加强版插件
 let NERDTreeQuitOnOpen=1
