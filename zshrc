@@ -101,10 +101,12 @@ alias cdr='cd-gitroot'
 alias o='open .'
 alias ctags='/usr/local/Cellar/ctags/5.8_1/bin/ctags'
 alias s="/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl"
+alias c="/usr/local/bin/code"
+alias code="cd ~/code"
+alias github="cd ~/github"
 alias my='mycli -uroot -p123456'
 alias py=python
-alias code='cd ~/code'
-alias github='cd ~/github'
+alias lg='lazygit'
 
 eval $(thefuck --alias)
 eval "$(pyenv init -)"
