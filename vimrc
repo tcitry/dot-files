@@ -10,8 +10,6 @@ Plugin 'Townk/vim-autoclose'
 " Plugin 'Raimondi/delimitMate'
 Plugin 'fatih/vim-go'
 
-Plugin 'tomasr/molokai'
-Plugin 'altercation/vim-colors-solarized'
 Plugin 'crucerucalin/peaksea.vim'
 Plugin 'chriskempson/vim-tomorrow-theme'
 
@@ -21,8 +19,6 @@ Plugin 'yonchu/accelerated-smooth-scroll'
 Plugin 'vim-scripts/matchit.zip'
 Plugin 'othree/xml.vim'
 Plugin 'mattn/webapi-vim'
-Plugin 'nathanaelkane/vim-indent-guides'
-Plugin 'airblade/vim-gitgutter'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'tpope/vim-fugitive'
 Plugin 'kien/ctrlp.vim'
@@ -38,8 +34,6 @@ filetype plugin indent on
 
 let mapleader=','
 syntax enable
-" let g:solarized_termcolors=256
-" let g:molokai_original = 1
 set t_Co=256
 set ai "自动对齐
 " set mouse=a
@@ -63,7 +57,7 @@ set completeopt-=preview
 set ic
 
 " colorscheme tomorrow-night
-colorscheme peaksea
+" colorscheme peaksea
 
 if has("gui_running") 
 	set guifont=Monaco:h14
@@ -75,10 +69,10 @@ if has("gui_running")
 	set showtabline=0 " 隐藏Tab栏 
 endif  
 
-let g:go_fmt_command = "goimports"
-let g:go_play_open_browser = 0
-let g:go_bin_path = $GOPATH
-let g:go_snippet_engine = "neosnippet"
+" let g:go_fmt_command = "goimports"
+" let g:go_play_open_browser = 0
+" let g:go_bin_path = $GOPATH
+" let g:go_snippet_engine = "neosnippet"
 let g:syntastic_python_checkers=['pylint']
 let g:nerdtree_tabs_open_on_console_startup=0       "设置打开vim的时候默认打开目录树加强版插件
 let NERDTreeQuitOnOpen=1

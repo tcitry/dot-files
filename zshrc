@@ -1,17 +1,24 @@
-source ~/.bashrc
-source ~/.bash_profile
+export PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/sbin:$PATH
 
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
-export GOPATH=$HOME/go
+
 export GVM_ROOT=$HOME/.gvm
-export GOROOT=/usr/local/go
-export PATH=$PATH:$GOROOT/bin
 export PATH=$PATH:$GVM_ROOT/bin
+export GOROOT=/usr/local/go
+export GOPATH=$HOME/go
+export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
 export HOMEBREW_BOTTLE_DOMAIN=http://7xkcej.dl1.z0.glb.clouddn.com
 export "CFLAGS=-I/usr/local/include -L/usr/local/lib"
 export JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk-9.jdk/Contents/Home"
 export PATH=$JAVA_HOME/bin:$PATH
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+export PATH=$HOME/mongodb/bin:$PATH
+export PATH=/usr/local/php5/bin:$PATH
+export PATH=/usr/local/mysql/bin:$PATH
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+export NVM_DIR="$HOME/.nvm"
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
@@ -61,13 +68,12 @@ ZSH_THEME="awesomepanda"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git docker docker-compose git-flow web-search colored-man-pages zsh-autosuggestions cd-gitroot)
+plugins=(git web-search colored-man-pages cd-gitroot zsh-autosuggestions autojump)
 
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
-export PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/sbin:$PATH
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
@@ -88,32 +94,40 @@ export LC_ALL=en_US.UTF-8
 # ssh
 # export SSH_KEY_PATH="~/.ssh/dsa_id"
 
-export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
-
-export PATH=$HOME/mongodb/bin:$PATH
-export PATH=/usr/local/php5/bin:$PATH
-export PATH=/usr/local/mysql/bin:$PATH
-alias tmux='tmux -2'
-alias vi=vim
-alias vim=/Applications/MacVim.app/Contents/MacOS/Vim
-alias act='. ../bin/activate'
+alias vi=/Applications/MacVim.app/Contents/MacOS/Vim
+alias a='. venv/bin/activate'
 alias 'cd..'='cd ..'
 alias cdr='cd-gitroot'
 alias o='open .'
 alias ctags='/usr/local/Cellar/ctags/5.8_1/bin/ctags'
 alias s="/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl"
+alias c="/usr/local/bin/code"
+alias code="cd ~/code"
+alias github="cd ~/github"
 alias my='mycli -uroot -p123456'
-alias code='cd /Users/yindongliang/Desktop/code'
-alias github='cd /Users/yindongliang/Desktop/github'
-
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+alias py=python
+alias lg='lazygit'
+alias d=docker
+alias npm="npm --registry=https://registry.npm.taobao.org \
+--cache=$HOME/.npm/.cache/cnpm \
+--disturl=https://npm.taobao.org/dist \
+--userconfig=$HOME/.cnpmrc"
 
 eval $(thefuck --alias)
+eval "$(pyenv init -)"
 
-# use for surge
-# proxy=http://127.0.0.1:6152
-# export http_proxy=$proxy
-# export https_proxy=$proxy
-# export ftp_proxy=$proxy
+function stop_proxy(){
+    unset all_proxy
+    echo -e "已关闭代理"
+}
+function start_proxy() {
+	export all_proxy='socks5://127.0.0.1:1086'
+    echo -e "已开启代理"
+}
+
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+# [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+[[ -s "/Users/yindongliang/.gvm/scripts/gvm" ]] && source "/Users/yindongliang/.gvm/scripts/gvm"
+
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+
