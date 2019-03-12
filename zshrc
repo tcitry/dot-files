@@ -6,12 +6,12 @@ export ZSH=$HOME/.oh-my-zsh
 # export GVM_ROOT=$HOME/.gvm
 # export PATH=$PATH:$GVM_ROOT/bin
 # export GOROOT=/usr/local/go
-export GOPATH=$HOME/go
-export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
-# export GOROOT_BOOTSTRAP=$GOROOT
+export GOPATH="$HOME/go:$HOME/golang"
+export PATH="$PATH:$HOME/go/bin"
+export GOROOT_BOOTSTRAP=$GOROOT
 # export HOMEBREW_BOTTLE_DOMAIN=http://7xkcej.dl1.z0.glb.clouddn.com
 export "CFLAGS=-I/usr/local/include -L/usr/local/lib"
-export JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk-11.0.1.jdk/Contents/Home"
+export JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk1.8.0_201.jdk/Contents/Home"
 export PATH=$JAVA_HOME/bin:$PATH
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 export PATH=$HOME/mongodb/bin:$PATH
@@ -105,10 +105,11 @@ alias s="/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl"
 alias c="/usr/local/bin/code"
 alias code="cd ~/code"
 alias github="cd ~/github"
-alias my='mycli -uroot -p123456'
+alias my='mycli -uroot -p12345678'
 alias py=python
 alias lg='lazygit'
 alias d=docker
+alias gg=gitup
 alias npm="npm --registry=https://registry.npm.taobao.org \
 --cache=$HOME/.npm/.cache/cnpm \
 --disturl=https://npm.taobao.org/dist \
@@ -124,6 +125,10 @@ function stop_proxy(){
 function start_proxy() {
 	export all_proxy='socks5://127.0.0.1:1086'
     echo -e "已开启代理"
+}
+function start_surge() {
+	export all_proxy=socks5://127.0.0.1:6153
+    echo -e "已开启surge代理"
 }
 
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
