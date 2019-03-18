@@ -3,13 +3,11 @@ export PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/sbin:$PATH
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
 
-# export GVM_ROOT=$HOME/.gvm
-# export PATH=$PATH:$GVM_ROOT/bin
-# export GOROOT=/usr/local/go
-export GOPATH="$HOME/go:$HOME/golang"
-export PATH="$PATH:$HOME/go/bin"
+export GVM_ROOT=$HOME/.gvm
+export PATH=$PATH:$GVM_ROOT/bin
+export GOPATH="$HOME/go"
+export PATH="$PATH:$GOPATH/bin"
 export GOROOT_BOOTSTRAP=$GOROOT
-# export HOMEBREW_BOTTLE_DOMAIN=http://7xkcej.dl1.z0.glb.clouddn.com
 export "CFLAGS=-I/usr/local/include -L/usr/local/lib"
 export JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk1.8.0_201.jdk/Contents/Home"
 export PATH=$JAVA_HOME/bin:$PATH
@@ -132,8 +130,8 @@ function start_surge() {
 }
 
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-# [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-# [[ -s "/Users/yindongliang/.gvm/scripts/gvm" ]] && source "/Users/yindongliang/.gvm/scripts/gvm"
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+[[ -s "/Users/yindongliang/.gvm/scripts/gvm" ]] && source "/Users/yindongliang/.gvm/scripts/gvm"
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
