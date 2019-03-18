@@ -5,9 +5,6 @@ export ZSH=$HOME/.oh-my-zsh
 
 export GVM_ROOT=$HOME/.gvm
 export PATH=$PATH:$GVM_ROOT/bin
-export GOPATH="$HOME/go"
-export PATH="$PATH:$GOPATH/bin"
-export GOROOT_BOOTSTRAP=$GOROOT
 export "CFLAGS=-I/usr/local/include -L/usr/local/lib"
 export JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk1.8.0_201.jdk/Contents/Home"
 export PATH=$JAVA_HOME/bin:$PATH
@@ -18,6 +15,7 @@ export PATH=/usr/local/mysql/bin:$PATH
 export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"
 export NVM_DIR="$HOME/.nvm"
+export GIT_TERMINAL_PROMPT=1
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
