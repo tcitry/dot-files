@@ -1,4 +1,5 @@
 export PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/sbin:$PATH
+[[ -s "/Users/yindongliang/.gvm/scripts/gvm" ]] && source "/Users/yindongliang/.gvm/scripts/gvm"
 
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
@@ -14,6 +15,8 @@ export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"
 export NVM_DIR="$HOME/.nvm"
 export GIT_TERMINAL_PROMPT=1
+export GOPATH="$HOME/go"
+export PATH="$GOPATH/bin:$PATH"
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
