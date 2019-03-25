@@ -102,7 +102,6 @@ alias s="/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl"
 alias c="/usr/local/bin/code"
 alias code="cd ~/code"
 alias github="cd ~/github"
-alias my='mycli -uroot -p12345678'
 alias p=python
 alias i=ipython
 alias lg='lazygit'
