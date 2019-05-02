@@ -6,3 +6,6 @@ cp vimrc ~/.vimrc
 cp zshrc ~/.zshrc
 cp bashrc ~/.bashrc
 cp bash_profile ~/.bash_profile
+
+mv ~/.hammerspoon ~/.hammerspoon_backup
+cp -r hammerspoon ~/.hammerspoon
