@@ -108,6 +108,7 @@ alias i=ipython
 alias lg='lazygit'
 alias d=docker
 alias gg=gitup
+alias f=fuck
 alias npm="npm --registry=https://registry.npm.taobao.org \
 --cache=$HOME/.npm/.cache/cnpm \
 --disturl=https://npm.taobao.org/dist \
