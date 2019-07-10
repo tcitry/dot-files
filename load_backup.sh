@@ -8,4 +8,4 @@ cp bashrc ~/.bashrc
 cp bash_profile ~/.bash_profile
 
 mv ~/.hammerspoon ~/.hammerspoon_backup
-cp -r hammerspoon ~/.hammerspoon
+cp -r .hammerspoon ~

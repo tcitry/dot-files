@@ -8,4 +8,4 @@ rm bashrc
 rm bash_profile
 ln ~/.bashrc bashrc
 ln ~/.bash_profile bash_profile
-cp -r ~/.hammerspoon hammerspoon
+cp -r ~/.hammerspoon .
