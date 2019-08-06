@@ -16,6 +16,7 @@ export PATH="$PYENV_ROOT/bin:$PATH"
 export NVM_DIR="$HOME/.nvm"
 export GIT_TERMINAL_PROMPT=1
 export GOPATH="$HOME/go"
+export GOPROXY=https://goproxy.io
 export PATH="$GOPATH/bin:$PATH"
 
 # Set name of the theme to load.
@@ -118,13 +119,14 @@ unsetopt AUTO_CD
 
 eval $(thefuck --alias)
 eval "$(pyenv init -)"
+eval "$(direnv hook zsh)"
 
 function stop_proxy(){
     unset all_proxy
     echo -e "已关闭代理"
 }
 function start_proxy() {
-	export all_proxy='socks5://127.0.0.1:1086'
+	export all_proxy='socks5://127.0.0.1:6153'
     echo -e "已开启代理"
 }
 function start_surge() {
