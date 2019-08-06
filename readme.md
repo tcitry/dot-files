@@ -5,4 +5,5 @@
 - Tmux 
 - Zsh
 - Oh-my-zsh
+- hammerspoon
 
