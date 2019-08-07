@@ -16,6 +16,7 @@ export PATH="$PYENV_ROOT/bin:$PATH"
 export NVM_DIR="$HOME/.nvm"
 export GIT_TERMINAL_PROMPT=1
 export GOPATH="$HOME/go"
+export GO111MODULE=on
 export GOPROXY=https://goproxy.io
 export PATH="$GOPATH/bin:$PATH"
 
@@ -108,8 +109,10 @@ alias p=python
 alias i=ipython
 alias lg='lazygit'
 alias d=docker
+alias k=kubectl
 alias gg=gitup
 alias f=fuck
+alias my="mycli -uroot -p 12345678 -h localhost"
 alias npm="npm --registry=https://registry.npm.taobao.org \
 --cache=$HOME/.npm/.cache/cnpm \
 --disturl=https://npm.taobao.org/dist \
@@ -119,18 +122,17 @@ unsetopt AUTO_CD
 
 eval $(thefuck --alias)
 eval "$(pyenv init -)"
-eval "$(direnv hook zsh)"
 
 function stop_proxy(){
     unset all_proxy
     echo -e "已关闭代理"
 }
 function start_proxy() {
-	export all_proxy='socks5://127.0.0.1:6153'
+	export all_proxy='socks5://127.0.0.1:1086'
     echo -e "已开启代理"
 }
 function start_surge() {
-	export all_proxy=socks5://127.0.0.1:6153
+	export https_proxy=http://127.0.0.1:6152;export http_proxy=http://127.0.0.1:6152;export all_proxy=socks5://127.0.0.1:6153
     echo -e "已开启surge代理"
 }
 
@@ -138,4 +140,3 @@ function start_surge() {
 # [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
-
