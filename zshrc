@@ -16,7 +16,7 @@ export PATH="$PYENV_ROOT/bin:$PATH"
 export NVM_DIR="$HOME/.nvm"
 export GIT_TERMINAL_PROMPT=1
 export GOPATH="$HOME/go"
-export GO111MODULE=on
+export GO111MODULE=auto
 export GOPROXY=https://goproxy.io
 export PATH="$GOPATH/bin:$PATH"
 
