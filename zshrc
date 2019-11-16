@@ -94,7 +94,7 @@ export LC_ALL=en_US.UTF-8
 # ssh
 # export SSH_KEY_PATH="~/.ssh/dsa_id"
 
-alias vi=/Applications/MacVim.app/Contents/MacOS/Vim
+# alias vi=/Applications/MacVim.app/Contents/MacOS/Vim
 alias a='. venv/bin/activate'
 alias 'cd..'='cd ..'
 alias cdr='cd-gitroot'
