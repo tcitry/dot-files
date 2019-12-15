@@ -19,6 +19,7 @@ export GOPATH="$HOME/go"
 export GO111MODULE=auto
 export GOPROXY=https://goproxy.io
 export PATH="$GOPATH/bin:$PATH"
+export PATH="/usr/local/opt/mysql@5.7/bin:$PATH"
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
