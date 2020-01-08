@@ -102,7 +102,6 @@ alias cdr='cd-gitroot'
 alias o='open .'
 alias ctags='/usr/local/Cellar/ctags/5.8_1/bin/ctags'
 alias s="/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl"
-alias m="/Applications/Sublime\ Merge.app/Contents/SharedSupport/bin/smerge"
 alias c="/usr/local/bin/code"
 alias code="cd ~/code"
 alias github="cd ~/github"
