@@ -8,7 +8,7 @@ Plugin 'bling/vim-airline'
 Plugin 'tpope/vim-surround'
 Plugin 'Townk/vim-autoclose'
 " Plugin 'Raimondi/delimitMate'
-Plugin 'fatih/vim-go'
+" Plugin 'fatih/vim-go'
 
 Plugin 'crucerucalin/peaksea.vim'
 Plugin 'chriskempson/vim-tomorrow-theme'

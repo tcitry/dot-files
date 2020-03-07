@@ -15,7 +15,7 @@ export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"
 export NVM_DIR="$HOME/.nvm"
 export GIT_TERMINAL_PROMPT=1
-export GOPATH="$HOME/go"
+export GOPATH="$HOME/go/go1.14"
 export GO111MODULE=auto
 export GOPROXY=https://goproxy.io
 export PATH="$GOPATH/bin:$PATH"
@@ -69,7 +69,7 @@ ZSH_THEME="awesomepanda"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git web-search colored-man-pages cd-gitroot zsh-autosuggestions autojump)
+plugins=(git web-search colored-man-pages cd-gitroot zsh-autosuggestions autojump docker)
 
 source $ZSH/oh-my-zsh.sh
 
