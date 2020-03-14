@@ -15,10 +15,11 @@ export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"
 export NVM_DIR="$HOME/.nvm"
 export GIT_TERMINAL_PROMPT=1
-export GOPATH="$HOME/go/go1.14"
+export GOROOT="$HOME/go/go1.14"
+export GOPATH="$GOROOT/bin"
 export GO111MODULE=auto
 export GOPROXY=https://goproxy.io
-export PATH="$GOPATH/bin:$PATH"
+export PATH="$GOPATH:$PATH"
 export PATH="/usr/local/opt/mysql@5.7/bin:$PATH"
 
 # Set name of the theme to load.
@@ -104,7 +105,7 @@ alias ctags='/usr/local/Cellar/ctags/5.8_1/bin/ctags'
 alias s="/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl"
 alias m="/Applications/Sublime\ Merge.app/Contents/SharedSupport/bin/smerge"
 alias c="/usr/local/bin/code"
-alias p=python
+alias p=python3
 alias i=ipython
 alias lg='lazygit'
 alias d=docker

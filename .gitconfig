@@ -1,0 +1,5 @@
+[user]
+	email = tcitry@gmail.com
+	name = tcitry
+[includeIf "gitdir:~/luoji/"]
+    path = .gitconfig-luoji
