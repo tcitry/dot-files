@@ -56,8 +56,8 @@ set background=dark
 set completeopt-=preview
 set ic
 
-colorscheme tomorrow-night
-" colorscheme peaksea
+" colorscheme tomorrow-night
+colorscheme peaksea
 
 if has("gui_running") 
 	set guifont=Monaco:h14
