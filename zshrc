@@ -1,13 +1,11 @@
 export PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/sbin:$PATH
-# [[ -s "/Users/yindongliang/.gvm/scripts/gvm" ]] && source "/Users/yindongliang/.gvm/scripts/gvm"
 
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
 
-export "CFLAGS=-I/usr/local/include -L/usr/local/lib"
-export JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk1.8.0_241.jdk/Contents/Home"
+# export JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk1.8.0_241.jdk/Contents/Home"
+export JAVA_HOME="/Users/yindongliang/Library/Java/JavaVirtualMachines/openjdk-15.0.1/Contents/Home"
 export PATH=$JAVA_HOME/bin:$PATH
-export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 export PATH=$HOME/mongodb/bin:$PATH
 export PATH=/usr/local/php5/bin:$PATH
 export PATH=/usr/local/mysql/bin:$PATH
@@ -22,6 +20,8 @@ export GOPROXY=https://goproxy.cn
 export PATH="$GOPATH:$GOPATH/bin:$PATH"
 export PATH="/usr/local/opt/mysql@5.7/bin:$PATH"
 export PATH="$HOME/.cargo/bin:$PATH"
+export PATH="$HOME/.rbenv/shims:$PATH"
+# export CFLAGS="-I/usr/local/include -L/usr/local/lib"
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
@@ -71,7 +71,7 @@ ZSH_THEME="awesomepanda"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git web-search colored-man-pages cd-gitroot zsh-autosuggestions autojump docker)
+plugins=(git web-search colored-man-pages cd-gitroot zsh-autosuggestions autojump docker zsh-nvm)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -106,7 +106,7 @@ alias ctags='/usr/local/Cellar/ctags/5.8_1/bin/ctags'
 alias s="/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl"
 alias merge="/Applications/Sublime\ Merge.app/Contents/SharedSupport/bin/smerge"
 alias m=multipass
-alias c="/usr/local/bin/code"
+alias c="~/.cargo/bin/cargo"
 alias p=python3
 alias i=ipython
 alias lg='lazygit'
@@ -114,7 +114,7 @@ alias d=docker
 alias k=kubectl
 alias gg=gitup
 alias f=fuck
-alias my="mycli -uroot -p 123456 -h localhost"
+alias my="mycli -uroot -p 12345678 -h localhost"
 
 unsetopt AUTO_CD
 
@@ -136,5 +136,3 @@ function start_surge() {
 
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-
-# test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
