@@ -28,3 +28,6 @@ load:
 gitconfig:
 	git config --global user.email "tcitry@gmail.com"
 	git config --global user.name "tcitry"
+install:
+	brew install autojump
+

@@ -13,7 +13,7 @@ export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"
 export NVM_DIR="$HOME/.nvm"
 export GIT_TERMINAL_PROMPT=1
-export GOROOT="$HOME/go/go1.14.1"
+export GOROOT="$HOME/go/go1.16.4"
 export GOPATH="$GOROOT/bin"
 export GO111MODULE=auto
 export GOPROXY=https://goproxy.cn
@@ -121,12 +121,17 @@ unsetopt AUTO_CD
 eval $(thefuck --alias)
 eval "$(pyenv init -)"
 
+
 function stop_proxy(){
     unset all_proxy
     echo -e "已关闭代理"
 }
 function start_proxy() {
 	export all_proxy='socks5://127.0.0.1:1086'
+    echo -e "已开启代理"
+}
+function start_clash() {
+	export https_proxy=http://127.0.0.1:7890;export http_proxy=http://127.0.0.1:7890;export all_proxy=socks5://127.0.0.1:7891
     echo -e "已开启代理"
 }
 function start_surge() {
