@@ -17,7 +17,7 @@ export GOROOT="$HOME/go/go1.16.4"
 export GOPATH="$GOROOT/bin"
 export GO111MODULE=auto
 export GOPROXY=https://goproxy.cn
-export PATH="$GOPATH:$PATH"
+export PATH="$GOPATH:$GOPATH/bin:$PATH"
 export PATH="/usr/local/opt/mysql@5.7/bin:$PATH"
 export PATH="$HOME/.cargo/bin:$PATH"
 export PATH="$HOME/.rbenv/shims:$PATH"
@@ -114,7 +114,7 @@ alias d=docker
 alias k=kubectl
 alias gg=gitup
 alias f=fuck
-alias t=ts-node
+alias ts=ts-node
 alias my="mycli -uroot -p 12345678 -h localhost"
 
 unsetopt AUTO_CD
@@ -142,3 +142,6 @@ function start_surge() {
 
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+
+alias gf=gf
