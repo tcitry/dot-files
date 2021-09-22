@@ -133,11 +133,15 @@ function start_proxy() {
 }
 function start_clash() {
 	export https_proxy=http://127.0.0.1:7890;export http_proxy=http://127.0.0.1:7890;export all_proxy=socks5://127.0.0.1:7891
-    echo -e "已开启代理"
+    echo -e "已开启clash代理"
 }
 function start_surge() {
 	export https_proxy=http://127.0.0.1:6152;export http_proxy=http://127.0.0.1:6152;export all_proxy=socks5://127.0.0.1:6153
     echo -e "已开启surge代理"
+}
+function start_ss() {
+	export https_proxy=http://127.0.0.1:1087;export http_proxy=http://127.0.0.1:1087;export all_proxy=socks5://127.0.0.1:1086
+    echo -e "已开启ss代理"
 }
 
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
