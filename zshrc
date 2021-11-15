@@ -105,7 +105,6 @@ alias o='open .'
 alias ctags='/usr/local/Cellar/ctags/5.8_1/bin/ctags'
 alias s="/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl"
 alias merge="/Applications/Sublime\ Merge.app/Contents/SharedSupport/bin/smerge"
-alias m=multipass
 alias c="~/.cargo/bin/cargo"
 alias p=python3
 alias i=ipython

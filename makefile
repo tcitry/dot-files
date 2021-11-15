@@ -1,17 +1,14 @@
 backup:
 	rm vimrc
 	rm zshrc
-	# rm tmux.conf
-	ln ~/.vimrc vimrc
-	ln ~/.zshrc zshrc
-	# ln ~/.tmux.conf tmux.conf
 	rm bashrc
 	rm bash_profile
+	ln ~/.vimrc vimrc
+	ln ~/.zshrc zshrc
 	ln ~/.bashrc bashrc
 	ln ~/.bash_profile bash_profile
 	rm -rf hammerspoon
-	cp -r ~/.hammerspoon hammerspoon
-	cp ~/.gitconfig .
+	cp -R ~/.hammerspoon hammerspoon
 load:
 	mv ~/.vimrc ~/.vimrc_backup
 	mv ~/.zshrc  ~/.zshrc_backup
@@ -23,8 +20,6 @@ load:
 	cp bash_profile ~/.bash_profile
 	rm -rf ~/.hammerspoon_backup
 	mv ~/.hammerspoon ~/.hammerspoon_backup
-	ln -s ~/Documents/hammerspoon ~/.hammerspoon
-	cp .gitconfig ~
 gitconfig:
 	git config --global user.email "tcitry@gmail.com"
 	git config --global user.name "tcitry"
