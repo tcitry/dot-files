@@ -11,12 +11,12 @@ backup:
 	cp -R ~/.hammerspoon hammerspoon
 load:
 	mv ~/.vimrc ~/.vimrc_backup
-	mv ~/.zshrc  ~/.zshrc_backup
-	mv ~/.bashrc ~/.bashrc_backup
-	mv ~/.bash_profile ~/.bash_profile_backup
 	cp vimrc ~/.vimrc
+	mv ~/.zshrc  ~/.zshrc_backup
 	cp zshrc ~/.zshrc
+	mv ~/.bashrc ~/.bashrc_backup
 	cp bashrc ~/.bashrc
+	mv ~/.bash_profile ~/.bash_profile_backup
 	cp bash_profile ~/.bash_profile
 	rm -rf ~/.hammerspoon_backup
 	mv ~/.hammerspoon ~/.hammerspoon_backup
