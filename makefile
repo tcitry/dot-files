@@ -20,6 +20,7 @@ load:
 	cp bash_profile ~/.bash_profile
 	rm -rf ~/.hammerspoon_backup
 	mv ~/.hammerspoon ~/.hammerspoon_backup
+	cp -R hammerspoon ~/.hammerspoon
 gitconfig:
 	git config --global user.email "tcitry@gmail.com"
 	git config --global user.name "tcitry"
