@@ -1,4 +1,4 @@
-export PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/sbin:$PATH
+export PATH=/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/sbin:$PATH
 
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
@@ -17,10 +17,14 @@ export GOROOT="$HOME/go/go1.16.10"
 export GOPATH="$GOROOT/bin"
 export GO111MODULE=auto
 export GOPROXY=https://goproxy.cn
-export PATH="$GOPATH:$GOPATH/bin:$PATH"
+export GONOPROXY="*.luojilab.com"
+export GOPRIVATE="*.luojilab.com"
+export PATH="$GOPATH:$GONOPROXY:$GOPRIVATE:$GOPATH/bin:$PATH"
 export PATH="/usr/local/opt/mysql@5.7/bin:$PATH"
 export PATH="$HOME/.cargo/bin:$PATH"
 export PATH="$HOME/.rbenv/shims:$PATH"
+export PATH="/Applications/Postgres.app/Contents/Versions/14/bin:$PATH"
+export PATH="/Users/yindongliang/flutter/bin:$PATH"
 # export CFLAGS="-I/usr/local/include -L/usr/local/lib"
 
 # Set name of the theme to load.
@@ -106,7 +110,7 @@ alias ctags='/usr/local/Cellar/ctags/5.8_1/bin/ctags'
 alias s="/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl"
 alias merge="/Applications/Sublime\ Merge.app/Contents/SharedSupport/bin/smerge"
 alias c="~/.cargo/bin/cargo"
-alias p=python3
+alias p=pnpm
 alias i=ipython
 alias lg='lazygit'
 alias d=docker
@@ -115,6 +119,7 @@ alias gg=gitup
 alias f=fuck
 alias ts=ts-node
 alias my="mycli -uroot -p 12345678 -h localhost"
+alias stree='/Applications/SourceTree.app/Contents/Resources/stree'
 
 unsetopt AUTO_CD
 
@@ -144,3 +149,8 @@ function start_ss() {
 
 
 alias gf=gf
+
+# pnpm
+export PNPM_HOME="~/Library/pnpm"
+export PATH="$PNPM_HOME:$PATH"
+# pnpm end
