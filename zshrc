@@ -4,7 +4,7 @@ export PATH=/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/
 export ZSH=$HOME/.oh-my-zsh
 
 # export JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk1.8.0_241.jdk/Contents/Home"
-export JAVA_HOME="/Users/yindongliang/Library/Java/JavaVirtualMachines/openjdk-15.0.1/Contents/Home"
+export JAVA_HOME="$HOME/Library/Java/JavaVirtualMachines/openjdk-15.0.1/Contents/Home"
 export PATH=$JAVA_HOME/bin:$PATH
 export PATH=$HOME/mongodb/bin:$PATH
 export PATH=/usr/local/php5/bin:$PATH
@@ -24,7 +24,7 @@ export PATH="/usr/local/opt/mysql@5.7/bin:$PATH"
 export PATH="$HOME/.cargo/bin:$PATH"
 export PATH="$HOME/.rbenv/shims:$PATH"
 export PATH="/Applications/Postgres.app/Contents/Versions/14/bin:$PATH"
-export PATH="/Users/yindongliang/flutter/bin:$PATH"
+export PATH="$HOME/flutter/bin:$PATH"
 # export CFLAGS="-I/usr/local/include -L/usr/local/lib"
 
 # Set name of the theme to load.
