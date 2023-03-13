@@ -23,9 +23,10 @@ load:
 	cp -R hammerspoon ~/.hammerspoon
 gitconfig:
 	git config --global user.email "tcitry@gmail.com"
-	git config --global user.name "Dongliang Yin"
+	git config --global user.name "tcitry"
 install:
 	brew install autojump
 	brew install pyenv
 	brew install thefuck
+	brew install lazygit
 

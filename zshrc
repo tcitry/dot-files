@@ -13,7 +13,7 @@ export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/shims:$PATH"
 export NVM_DIR="$HOME/.nvm"
 export GIT_TERMINAL_PROMPT=1
-export GOROOT="$HOME/go/go1.16.10"
+export GOROOT="$HOME/go/go1.20.2"
 export GOPATH="$GOROOT/bin"
 export GO111MODULE=auto
 export GOPROXY=https://goproxy.cn
@@ -110,7 +110,7 @@ alias ctags='/usr/local/Cellar/ctags/5.8_1/bin/ctags'
 alias s="/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl"
 alias merge="/Applications/Sublime\ Merge.app/Contents/SharedSupport/bin/smerge"
 alias c="~/.cargo/bin/cargo"
-alias p=pnpm
+alias p=pyhton
 alias i=ipython
 alias lg='lazygit'
 alias d=docker
@@ -120,6 +120,7 @@ alias f=fuck
 alias ts=ts-node
 alias my="mycli -uroot -p 12345678 -h localhost"
 alias stree='/Applications/SourceTree.app/Contents/Resources/stree'
+alias x="sudo xattr -r -d com.apple.quarantine"
 
 unsetopt AUTO_CD
 
@@ -154,3 +155,21 @@ alias gf=gf
 export PNPM_HOME="$HOME/Library/pnpm"
 export PATH="$PNPM_HOME:$PATH"
 # pnpm end
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/Users/yindongliang/opt/anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/Users/yindongliang/opt/anaconda3/etc/profile.d/conda.sh" ]; then
+        . "/Users/yindongliang/opt/anaconda3/etc/profile.d/conda.sh"
+    else
+        export PATH="/Users/yindongliang/opt/anaconda3/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
+
+
+eval $(thefuck --alias)
