@@ -10,7 +10,6 @@ export PATH=$HOME/mongodb/bin:$PATH
 export PATH=/usr/local/php5/bin:$PATH
 export PATH=/usr/local/mysql/bin:$PATH
 export PYENV_ROOT="$HOME/.pyenv"
-export NVM_DIR="$HOME/.nvm"
 export GIT_TERMINAL_PROMPT=1
 export GOROOT="$HOME/go/go1.20.2"
 export GOPATH="$GOROOT/bin"
@@ -109,7 +108,8 @@ alias ctags='/usr/local/Cellar/ctags/5.8_1/bin/ctags'
 alias s="/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl"
 alias merge="/Applications/Sublime\ Merge.app/Contents/SharedSupport/bin/smerge"
 alias c="~/.cargo/bin/cargo"
-alias p=pyhton3
+alias p=pip
+alias py=pyhton3
 alias i=ipython
 alias lg='lazygit'
 alias d=docker
@@ -121,6 +121,9 @@ alias ts=ts-node
 alias my="mycli -uroot -h localhost"
 alias stree='/Applications/SourceTree.app/Contents/Resources/stree'
 alias x="sudo xattr -r -d com.apple.quarantine"
+alias gf=gf
+alias pn=pnpm
+alias n=npm
 
 unsetopt AUTO_CD
 
@@ -144,12 +147,6 @@ function start_ss() {
 	export https_proxy=http://127.0.0.1:1087;export http_proxy=http://127.0.0.1:1087;export all_proxy=socks5://127.0.0.1:1086
     echo -e "已开启ss代理"
 }
-
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-
-
-alias gf=gf
 
 # pnpm
 export PNPM_HOME="$HOME/Library/pnpm"
